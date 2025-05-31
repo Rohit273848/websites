@@ -1,0 +1,18 @@
+.font-display{
+    font-family: poppins, sans-serif;
+}
+.font-body {
+    font-family: inter, sans-serif;
+}
+.text-primary {
+    color: #3238f2;
+}
+body{
+    font-family: inter,sans-serif;
+}
+h1,h2,h2{
+    
+    font-family: poppins, sans-serif;
+    color: #1e2939;
+    font-weight: 500;
+}
