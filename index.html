@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="">
     <!--Start Navbar -->
     <div class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
         <a href="#" id="brand" class="flex items-center gap-2 ">
@@ -42,7 +42,7 @@
         <!-- Start Nav Dialog -->
         <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
             <div id="nav-menu" class="flex justify-between">
-                <a id="brand" class="flex items-center gap-2 ">
+                <a id="brand" class="flex items-center gap-2 flex-1">
                     <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="">
                     <h class="text-lg font-medium font-display">ToDesktop</h>
                 </a>
@@ -60,7 +60,7 @@
                 <a href="#" class="font-medium p-3 hover:bg-gray-100">Login</a>
             </div>
 
-            <div class="border border-gray-400 mt-6"></div>
+            <div class="hidden lg:flex flex-1 justify-end"></div>
 
             <button
                 class="mt-6 font-medium text-center flex gap-2 items-center border-gray-400 px-6 py-2 rounded-lg  hover:border-gray-600 hover:bg-gray-200">
@@ -74,8 +74,9 @@
     <!-- Main -->
     <main class="mt-16">
         <!-- Start Hero Section -->
-        <div id="heroSection" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
-            <div id="hero-container " class=" max-w-4xl mx-auto px-6 pt-6 pb-16 flex flex-col">
+        <div id="heroSection" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+            <div id="hero-container "
+                class=" max-w-4xl mx-auto px-6 pt-6 pb-16 flex flex-col sm:items-center sm:text-center  sm:p t-12">
                 <div id="version-Text " class="flex items-center my-6 gap-2 border border-yellow-300 
             bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
                     <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
@@ -84,14 +85,1135 @@
                     <i
                         class="fa-solid fa-arrow-right text-yellow-600 text-g group-hover:translate-x-1 transition duration-300"></i>
                 </div>
-                <h1 class=" text-center text-4xl font-semibold leading-snug mt-4 sm:text-6xl">Web app to desktop app in
+
+                <div id="hero-features" class=" gap-8 my-6 hidden sm:flex">
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-regular fa-file-code text-sm"></i>
+                        <p>Code Optional</p>
+                    </div>
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-solid fa-hand-back-fist"></i>
+                        <p>Drag & drop builder</p>
+                    </div>
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-solid fa-laptop"></i>
+                        <p>Windows, Mac, Linux</p>
+                    </div>
+
+                </div>
+                <h1 class=" text-center text-4xl  leading-snug mt-4 sm:text-6xl">Web app to desktop app in
                     minutes</h1>
+                <p class="text-xl mt-4 sm:text-2xl sm:mt-8 text-gray-800">Take your web app codebase and transform it
+                    into a cross platform desktop app with native functionality.</p>
+                <div id="buttons-container" class="mt-12 flex gap-4 flex-col sm:flex-row">
+                    <button
+                        class="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">Download
+                        now</button>
+                    <button
+                        class="px-8 py-3 font-semibold  rounded-lg bg-white border border-gray-400 hover:border-gray-800">Read
+                        Docs</button>
+                </div>
+            </div>
+
+            <!-- Apps powered by ToDesktop -->
+            <div id="companies-container " class="flex flex-col gap-8">
+                <div id="companies-title" class=" flex justify-center gap-2">
+                    <img class="translate-y-2" src="./assets/asset 2.svg" alt="">
+                    <span class="font-semibold  "> APPS POWERED BY TODESKTOP</span>
+                    <img class="translate-y-2 -scale-x-100" src="/assets/asset 2.svg" alt="">
+                </div>
+                <div id="lines-group" class="flex flex-col gap-4">
+                    <!-- Line 1 -->
+                    <div id="line1" class="flex gap-4 w-screen translate-x-48 transition-transform ease-linear">
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 3.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 4.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">LifeAt</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Convy</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 6.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Morgen</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 7.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Campsite</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 8.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Rise</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 9.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">ClickUp</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 10.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Notion</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 11.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Sunsama</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 12.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Beeper</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 13.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Cal</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 14.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Webstudio</span>
+                        </div>
+
+                    </div>
+                    <!-- Line 2 -->
+                    <div id="line2" class="flex gap-4 w-screen translate-x-36 transition-transform ease-linear ">
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 15.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 16.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 17.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 18.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 19.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 20.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Moises</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 21.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Basedash</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 22.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Cursor</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 23.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Linear</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 24.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Voiceflow</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 25.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Kitemaker</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 26.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Cron</span>
+                        </div>
+                    </div>
+
+                    <!-- Line 3  -->
+                    <div id="line3"
+                        class="flex md:hidden gap-4 w-screen translate-x-48 transition-transform ease-linear">
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 15.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 16.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 17.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 3.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 4.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 12.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 13.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 14.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 24.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 25.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                            <img src="./assets/asset 26.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                            <span class="text-[12px] font-semibold lg:text-[16px]">Unbounce1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- How it's works -->
+        <!-- step-by-step -->
+
+        <div id="steps" class="flex flex-col gap-6 px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mT-32">
+            <H2 class="text-5xl sm:font-semibold">How it works</H2>
+            <div id="step1" class="gap-4 rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span
+                        class="border border-yellow-300 bg-yellow-800 w-fit px-1 rounded-lg font-medium font-display">Step
+                        1</span>
+                    <h3 class="text-4xl  hover:text-red-500">Bootstrap straight from your web app </h3>
+                    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app
+                        design, app icon and window frame UI with no code.</p>
+
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="step2" class="pt-12 ">
+                    <img src="./assets/asset 66.svg" alt="">
+                </div>
+            </div>
+
+            <div id="step2" class="gap-4 rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span
+                        class="border border-yellow-300 bg-yellow-800 w-fit px-1 rounded-lg font-medium font-display">Step
+                        2</span>
+                    <h3 class="text-4xl  hover:text-red-500">Bootstrap straight from your web app </h3>
+                    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app
+                        design, app icon and window frame UI with no code.</p>
+
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="step2" class="pt-12 ">
+                    <img src="./assets/asset 66.svg" alt="">
+                </div>
+            </div>
+
+            <div id="step3" class="gap-4 rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span
+                        class="border border-yellow-300 bg-yellow-800 w-fit px-1 rounded-lg font-medium font-display">Step
+                        3</span>
+                    <h3 class="text-4xl  hover:text-red-500">Bootstrap straight from your web app </h3>
+                    <p class="text-lg font-light">Copy and paste your web app url into ToDesktop. Customise your app
+                        design, app icon and window frame UI with no code.</p>
+
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-red-600 border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <!-- <a  class="text-lg font-light border-b border-black hover:text-red-500"href="">Multiple Windows</a> -->
+                            <a class="text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80"
+                                href="">Multiple windows</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="step2" class="pt-12 ">
+                    <img src="./assets/asset 66.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Bento grid -->
+
+        <div id="bento-grid" class="px-6  py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32">
+            <h2 class=" text-4xl sm:text-5xl sm:font-semibold mb-14 max-w-3xl">ToDesktop handles the details</h2>
+            <div id="grid-container" class="flex flex-col lg:grid lg:grid-cols-3 gap-6" style="grid-auto-rows: 96px;">
+
+                <div class="rounded-2xl border row-start-1 row-end-3 " style="background-color: red;">
+                    <div
+                        class="bg-white hover:bg-amber-600 rounded-2xl w-full h-full p-6 gap-6 flex flex-col items-center ">
+                        <h3 class="text-2xl bg-amber-400 text-amber-500">Native Notifications</h3>
+                        <img src="./assets/asset 37.png" alt="">
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border row-start-1 row-end-4  " style="background-color: red;">
+                    <div
+                        class="bg-white hover:bg-amber-600 rounded-2xl w-full h-full p-6 gap-6 flex flex-col items-center ">
+                        <h3 class="text-2xl bg-amber-400 text-amber-500">Native Notifications</h3>
+                        <p class="text-lg text-center font-light">We’ll ensure the underlying browser is up to date and
+                            deliver performance improvements, security patches, & additional features.</p>
+                        <img src="./assets/asset 38.png" alt="">
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border row-start-1 row-end-3  " style="background-color: red;">
+                    <div
+                        class="bg-white hover:bg-amber-600 rounded-2xl w-full h-full p-6 gap-6 flex flex-col items-center ">
+                        <h3 class="text-2xl bg-amber-400 text-amber-500">Native Notifications</h3>
+                        <img src="./assets/asset 39.png" alt="">
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border  row-start-3 row-end-6 " style="background-color: red;">
+                    <div
+                        class="bg-white hover:bg-amber-600 rounded-2xl w-full h-full p-6 gap-6 flex flex-col items-center ">
+                        <h3 class="text-2xl bg-amber-400 text-amber-500">Native Notifications</h3>
+                        <p class="text-lg text-center font-light">We’ll ensure the underlying browser is up to date and
+                            deliver performance improvements, security patches, & additional features.</p>
+                        <img src="./assets/asset 40.png" alt="">
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border row-start-4 row-end-6  " style="background-color: red;">
+                    <div
+                        class="bg-white hover:bg-amber-600 rounded-2xl w-full h-full p-6 gap-6 flex flex-col items-center ">
+                        <h3 class="text-2xl bg-amber-400 text-amber-500">Native Notifications</h3>
+                        <img src="./assets/asset 37.png" alt="">
+                    </div>
+                </div>
+
+                <div class="rounded-2xl border row-start-3 row-end-6  " style="background-color: red;">
+                    <div
+                        class="bg-white hover:bg-amber-600 rounded-2xl w-full h-full p-6 gap-6 flex flex-col items-center ">
+                        <h3 class="text-2xl bg-amber-400 text-amber-500">Native Notifications</h3>
+                        <p class="text-lg text-center font-light">We’ll ensure the underlying browser is up to date and
+                            deliver performance improvements, security patches, & additional features.</p>
+                        <img src="./assets/asset 38.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- compaines Feature line -->
+        <div id="feature-line" class="container mt-4">
+            <div class=" border-amber-200 rounded-lg overflow-hidden flex justify-center p-4">
+                <div id="line4" class="flex gap-8 p-6">
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Download Analytics</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Multi-window support</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Trays</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Deep Linking</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Custom Menus</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Download Analytics</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Multi-window support</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Trays</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Deep Linking</h3>
+                    <span>•</span>
+                    <h3 class="whitespace-nowrap my-0 mx-2 text-2xl font-semibold">Custom Menus</h3>
+                    <span>•</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div id="testimonials" class="container ">
+            <h2 class="text-5xl sm:font-semibold mb-14">Customer stories</h2>
+            <div class="rounded-xl border flex flex-col lg:flex-row items-end">
+                <div id="left" class="flex flex-col gap-12 p-8">
+                    <div class="h-4 w-fit">
+                        <img src="./assets/asset 44.svg" alt="">
+                    </div>
+                    <h3 class="text-xl leading-relaxed">ClickUp used ToDesktop to get their desktop app in front of
+                        customers in days instead of months.</h3>
+                    <div id="tap-container" class="flex gap-3 flex-wrap">
+                        <div class="flex gap-2 items-center justify-center bg-yellow-300 px-3 py-1 rounded-md text-yellow-800"
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Chromeless UI</span>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center bg-yellow-300 px-3 py-1 rounded-md text-yellow-800"
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Native spellcheck</span>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center bg-yellow-300 px-3 py-1 rounded-md text-yellow-800"
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Task time in menubar</span>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center bg-yellow-300 px-3 py-1 rounded-md text-yellow-800"
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Notification count in the dock</span>
+                        </div>
+                        <div class="flex gap-2 items-center justify-center bg-yellow-300 px-3 py-1 rounded-md text-yellow-800"
+                            <i class="fa-solid fa-check"></i>
+                            <span class="font-display font-medium">Global hotkey to create task</span>
+                        </div>
+                    </div>
+
+                    <p class="text-lg font-light text-gray-500">“ToDesktop provided us with a <span
+                            class="text-gray-800">polished desktop app</span> in no time. Their expert team guided us
+                        through a smooth migration from our outdated legacy desktop app, enabling us to deliver <span
+                            class="text-gray-800">new and improved features</span> to our customers within days.”</p>
+
+                    <div id="user-card" class="flex gap-4">
+                        <div class="w-12">
+                            <img src="./assets/asset 45.jpeg" class="rounded-full" alt="">
+                        </div>
+                        <div class="flex flex-col">
+                            <h3>Zeb Evans</h3>
+                            <p class="text-gray-500">Founder & CEO, <a href="#" class="anchor-hover">ClickUp</a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="./assets/asset 46.png" class="pl-12" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-between gap-4 mt-6">
+                <div class="rounded-2xl gradient-hover-outer group">
+                    <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
+                                <i class="fa-solid fa-code text-indigo-800"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold">Native APIs</h3>
+                        </div>
+                        <p class="text-lg font-light">What sets ToDesktop apart is its seamless integration with native
+                            APIs using our existing web codebase. By tapping into APIs like Tray and Notifications,
+                            we've crafted an exceptionally polished desktop user experience.</p>
+                        <div class="flex gap-4">
+                            <div class="flex">
+                                <div
+                                    class="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
+                                    <img src="./assets/asset 47.png" class="min-w-16 min-h-16" alt="">
+                                </div>
+                                <div class="w-12 h-12 rounded-full overflow-hidden border border-white">
+                                    <img src="./assets/asset 48.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3>Rick Pastoor</h3>
+                                <a href="#" class="anchor-hover w-fit text-gray-500">Rise</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="rounded-2xl gradient-hover-outer group">
+                    <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
+                                <i class="fa-solid fa-code text-indigo-800"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold">Native APIs</h3>
+                        </div>
+                        <p class="text-lg font-light">What sets ToDesktop apart is its seamless integration with native
+                            APIs using our existing web codebase. By tapping into APIs like Tray and Notifications,
+                            we've crafted an exceptionally polished desktop user experience.</p>
+                        <div class="flex gap-4">
+                            <div class="flex">
+                                <div
+                                    class="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
+                                    <img src="./assets/asset 47.png" class="min-w-16 min-h-16" alt="">
+                                </div>
+                                <div class="w-12 h-12 rounded-full overflow-hidden border border-white">
+                                    <img src="./assets/asset 48.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3>Rick Pastoor</h3>
+                                <a href="#" class="anchor-hover w-fit text-gray-500">Rise</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="rounded-2xl gradient-hover-outer group">
+                    <div class="rounded-2xl p-6 gradient-hover-inner flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-200 flex items-center justify-center rounded-full">
+                                <i class="fa-solid fa-code text-indigo-800"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold">Native APIs</h3>
+                        </div>
+                        <p class="text-lg font-light">What sets ToDesktop apart is its seamless integration with native
+                            APIs using our existing web codebase. By tapping into APIs like Tray and Notifications,
+                            we've crafted an exceptionally polished desktop user experience.</p>
+                        <div class="flex gap-4">
+                            <div class="flex">
+                                <div
+                                    class="-mr-3 w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border border-white">
+                                    <img src="./assets/asset 47.png" class="min-w-16 min-h-16" alt="">
+                                </div>
+                                <div class="w-12 h-12 rounded-full overflow-hidden border border-white">
+                                    <img src="./assets/asset 48.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3>Rick Pastoor</h3>
+                                <a href="#" class="anchor-hover w-fit text-gray-500">Rise</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="rounded-2xl flex flex-col bg-black lg:flex-row mt-12 pt-6 lg:pt-10">
+                <div class="flex flex-col gap-4 p-8 lg:flex-1 lg:gap-8">
+                    <span class="text-gray-400 font-display font-medium">READY TO START BUILDING?</span>
+                    <h2 class="text-4xl text-white leading-tight lg:text-5xl">Create your desktop app for free*</h2>
+                    <p class="text-lg font-light text-gray-400 lg:text-xl">ToDesktop Builder will take you step-by-step
+                        through the process of creating your first desktop app in just a few minutes.</p>
+                    <button
+                        class="bg-primary text-white py-3 rounded-lg hover:bg-opacity-90 flex justify-center items-center gap-4">
+                        <i class="fa-solid fa-download "></i>
+                        <span>Download ToDestop Builder</span>
+                    </button>
+                    <p class="text-gray-400 text-xs italic leading-tight">*You can create a desktop app and run it on
+                        your computer for free. You will only be charged if you want to create a distributable app for
+                        your customers.</p>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="./assets/asset 46.png" class="pl-12" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing -->
+        <div id="pricing" class="container">
+            <h2 class="h2-style">Choose a plan that fits your needs</h2>
+            <div class="flex flex-col lg:flex-row mt-6 gap-6">
+                <div class="border flex-1 rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <h3 class="text-4xl">Free</h3>
+                    <p class="text-lg font-light">For personal use or testing your app before deploying to customers.
+                    </p>
+                    <p class="uppercase">Key Features</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="border px-8 py-3 text-primary rounded-lg hover:border-gray-800 font-display font-medium">
+                        Read Docs
+                    </button>
+                </div>
+                <div class="border flex-1 rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <h3 class="text-4xl">Essential</h3>
+                    <p class="text-lg font-light">For simple desktop apps.</p>
+                    <p class="text-lg font-light"><span class="text-2xl font-semibold">$99</span>/month</p>
+                    <p class="uppercase">Key Features</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="border px-8 py-3 text-primary rounded-lg hover:border-gray-800 font-display font-medium">
+                        Read Docs
+                    </button>
+                </div>
+                <div
+                    class="border flex-1 relative rounded-xl px-8 pt-12 pb-8 flex flex-col gap-6 lg:border-none lg:bg-slate-50">
+                    <p
+                        class="text-blue-800 text-sm bg-indigo-100 rounded-full w-fit px-4 py-2 font-display font-semibold absolute top-0 right-8 -translate-y-1/2">
+                        Most Popular</p>
+                    <h3 class="text-4xl">Professional</h3>
+                    <p class="text-lg font-light">For sophisticated desktop apps.</p>
+                    <p class="text-lg font-light"><span class="text-2xl font-semibold">$99</span>/month</p>
+                    <p class="uppercase">Key Features</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-xmark text-gray-500"></i>
+                            <span class="text-lg font-light text-gray-800">Free for personal use</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="px-8 py-3 text-white bg-primary rounded-lg hover:bg-opacity-90 font-display font-medium">
+                        Read Docs
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs -->
+        <div id="faq" class="container">
+            <h2 class="h2-style">FAQs</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start">
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-1">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-1" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group cursor-pointer rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-2">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-2" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-3">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-3" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group cursor-pointer rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-4">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-4" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="cursor-pointer flex justify-between items-center" aria-controls="faq-5">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-5" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
+                <div class="group cursor-pointer rounded-xl border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-6">
+                        <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-chevron-up -rotate-180 transition-transform"></i>
+                    </dt>
+                    <dd id="faq-6" class="hidden text-lg font-light mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.</p>
+                    </dd>
+                </div>
             </div>
         </div>
     </main>
-    <script src="https://kit.fontawesome.com/fefe8bf920.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <footer class="container">
+        <div
+            class="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+            <a href="#" class="font-light font-display">Documentation</a>
+            <div class="flex gap-8 text-lg">
+                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+                <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
+                <span class="text-lg font-medium font-display">ToDesktop</span>
+            </a>
+        </div>
+        <div id="sub-footer" class="flex flex-col gap-6 items-center justify-center my-12">
+            <div class="flex gap-2 items-center ">
+                <img class="w-4 h-4" src="./assets/asset 54.svg" alt="Y-combinator">
+                <p class="text-sm text-gray-600">A Y Combinator company.</p>
+            </div>
+            <p class="text-sm text-gray-400">© 2024 ToDesktop, Inc. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+<script src="https://kit.fontawesome.com/fefe8bf920.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
 </html>
-58 29 05 7:58
+    <!-- <script src="https://kit.fontawesome.com/fefe8bf920.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <div class="h-[1000]px"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam reiciendis consequuntur natus sunt quaerat
+        nihil inventore animi aliquid quibusdam dolorum! Odio neque eligendi nulla molestiae modi? Expedita sapiente
+        accusamus voluptatem.
+        Dolore, quam. Omnis dolore quia dolorem et nemo eum ratione adipisci aspernatur, deserunt recusandae, ea velit
+        porro. Temporibus est animi ipsum dolorem eos quia distinctio repellendus rerum, vero dolores sequi!
+        Eos ut placeat sint expedita perspiciatis iste! Perferendis facilis quae cupiditate architecto animi magni sed
+        porro eligendi, perspiciatis corporis voluptas iste asperiores velit a! Quae nihil omnis adipisci facilis quia?
+        Veniam sed hic sequi facere distinctio quod voluptate dolores harum numquam, aspernatur non animi sint quis,
+        sapiente laboriosam, autem excepturi itaque nemo voluptas! Dolor neque vitae repellendus recusandae corrupti
+        perferendis.
+        Minima, placeat corrupti? Ducimus aliquam magni voluptatibus placeat dolore iusto molestias ab voluptate quis
+        quod? Nesciunt consectetur quod rem cum minus, impedit ratione repellat? Ab sequi quas deserunt odio voluptatum?
+        Vel totam expedita sed laboriosam voluptatum optio omnis corporis nemo, sequi sit incidunt quae possimus
+        delectus! Repellendus enim autem eos debitis, minus architecto tempore sapiente, iure nam distinctio quos quod?
+        Temporibus enim in aliquam, quaerat ex, soluta minima eos at accusamus culpa corporis eveniet voluptatum minus
+        ea odit voluptatem quae consectetur iusto, quam distinctio atque quos esse. Illum, praesentium nisi.
+        Officiis quibusdam mollitia, rerum quidem ex quaerat vero? Mollitia quia esse, officia ad a delectus fugiat!
+        Nesciunt corporis, molestiae quo eos repellat praesentium tenetur enim qui! In porro facere maiores.
+        Quos corporis voluptas laboriosam, assumenda error natus similique. Blanditiis pariatur quam non ab quidem
+        cupiditate architecto excepturi, adipisci quos ex ullam, veritatis totam distinctio doloribus reiciendis culpa
+        et asperiores praesentium?
+        Exercitationem iste blanditiis placeat sapiente maiores. Est, molestiae unde, explicabo suscipit id quidem
+        molestias, voluptate porro nesciunt reiciendis ipsam itaque ab vero temporibus? Repellendus quidem repudiandae
+        ullam ea, eligendi maxime?
+        Eum ratione dolore aspernatur harum voluptatibus nemo hic saepe, aliquid veritatis natus doloribus pariatur
+        veniam praesentium obcaecati recusandae! Ipsa totam enim dolor consequatur ipsum ducimus tempora deserunt hic,
+        doloremque voluptas?
+        Alias dignissimos ducimus beatae, vero modi doloribus itaque ab voluptatem corporis ullam repudiandae nesciunt,
+        asperiores voluptatibus delectus quasi aspernatur? Voluptates mollitia sequi enim repudiandae molestias ipsam,
+        esse ex officiis quas!
+        Maiores id voluptates magnam? A optio nobis atque officiis aliquam tempore quasi eaque provident dolore nulla
+        voluptatibus, libero amet repudiandae molestias? Sapiente aperiam excepturi tenetur alias magnam aliquid eos
+        tempora!
+        Odit veniam soluta voluptates nemo? Officia incidunt, a laboriosam nesciunt voluptas inventore quibusdam quasi
+        beatae provident tempore eos, assumenda animi. Quam temporibus officia illo consequatur debitis, earum quia
+        soluta aperiam.
+        Enim, cum vitae adipisci inventore soluta dolorum corrupti, voluptatum dolore eaque commodi minima maiores amet
+        obcaecati? Asperiores nam praesentium rerum aut beatae veritatis, temporibus perferendis est voluptate tempora
+        aspernatur tenetur.
+        Dolorum totam sed quidem natus est, voluptatum velit optio praesentium repellat minima ad minus voluptatibus
+        odio, reiciendis fuga porro sunt illum. Iste, recusandae esse exercitationem nemo consequatur repudiandae culpa
+        amet?
+        Provident reiciendis similique voluptas eos dolore exercitationem mollitia? Placeat repellendus magni mollitia,
+        odio repellat impedit aliquid nemo vero ut quas architecto, maiores, reprehenderit ipsam recusandae quaerat aut
+        quod consectetur laudantium!
+        Similique, deleniti accusamus facere ad hic corporis dolore eveniet, fugit reprehenderit soluta rerum quasi
+        perspiciatis veritatis amet excepturi magnam voluptates laborum cupiditate provident quaerat reiciendis aliquam
+        iure. Voluptas, consequuntur aliquam?
+        Facere dignissimos facilis ex harum repellat inventore laborum saepe vitae. Molestiae, minus sapiente eos
+        accusantium quia impedit eaque doloremque assumenda eveniet voluptatibus facere id repellendus quidem nam est,
+        dolore corrupti.
+        Velit, nihil, recusandae quia rem sapiente fugiat beatae culpa pariatur placeat at ipsa necessitatibus
+        voluptatum. Tempora placeat illo aspernatur optio fugit? Cumque optio incidunt sit in, minus adipisci nesciunt
+        exercitationem?
+        Minus aliquid placeat magni nemo, modi deserunt saepe rerum a sint laborum? Ipsam, totam ducimus praesentium
+        ipsa doloremque quasi incidunt veniam reiciendis sint distinctio itaque asperiores quos delectus deleniti
+        beatae.
+        Perspiciatis distinctio rerum, ipsa ab incidunt, inventore sequi, modi necessitatibus eaque natus sunt vitae?
+        Deserunt quidem, blanditiis quia id maiores sit itaque labore iste. Et maiores dolores sit debitis asperiores.
+        Et modi nulla dolorem assumenda. Possimus a error ea dolorum reiciendis debitis excepturi quas reprehenderit
+        nemo doloribus repellendus eius assumenda repudiandae sunt commodi, eos inventore soluta ab provident eligendi
+        amet.
+        Exercitationem alias odit, quas eos doloremque, mollitia itaque facilis id repellat, aliquam natus iure labore
+        consequuntur cum veritatis. A architecto ab doloremque itaque sequi ratione perspiciatis nostrum sed veritatis
+        et.
+        Ipsam expedita tempora quis odio, ipsa at minima, quam excepturi odit neque rem sed? Ea sit sed, expedita
+        eligendi nisi possimus provident, minus eius exercitationem quod inventore. Facere, eveniet illo.
+        Eveniet placeat quidem officiis, ipsa explicabo ex quos eum cumque minima officia corrupti iste possimus
+        dolores? Voluptatibus temporibus fugit commodi molestiae eos eligendi pariatur cupiditate, illo ut accusamus
+        labore officia.
+        Earum voluptatum quisquam, ratione nemo reprehenderit accusantium culpa temporibus laboriosam rerum maxime quis.
+        Cumque ipsa tenetur officia cupiditate ipsam sunt quaerat accusantium libero ipsum quia molestiae quidem
+        provident, adipisci placeat!
+        Non atque corrupti, nulla distinctio placeat eaque at ut officia qui quae itaque molestiae rem minus eum tempora
+        cum perspiciatis nam illum dolorum eligendi cupiditate ipsum fugiat ducimus! Vel, in?
+        Veniam libero beatae eos? Atque odit assumenda voluptatum non mollitia iusto sint culpa inventore dolore,
+        molestias debitis similique impedit aliquam nisi rerum, laborum officiis. Natus consequatur iusto quo recusandae
+        temporibus.
+        Nostrum suscipit pariatur recusandae, obcaecati excepturi dolore quia facere sint odit alias nisi distinctio
+        assumenda ducimus praesentium ipsa mollitia porro eligendi corrupti aliquam fuga illum tempora dicta cumque!
+        Autem, repudiandae.
+        Consectetur ipsa temporibus odit, nam aut eveniet accusamus quo inventore ut amet aperiam enim debitis adipisci
+        quibusdam, soluta saepe optio possimus repellat? Culpa perferendis beatae voluptatem, reiciendis odit at
+        similique.
+        Qui explicabo deserunt nam alias quo, debitis velit accusamus aspernatur in doloremque consequatur maxime.
+        Laboriosam repellendus quibusdam nesciunt, fugiat aliquid iste, molestiae doloribus necessitatibus voluptas
+        facilis maiores tenetur dicta quo!
+        Provident ipsam animi amet quos fugit voluptate molestias consectetur dolorem. Facilis deserunt dignissimos
+        excepturi mollitia soluta cum ratione adipisci illum earum, in molestiae dicta ipsa praesentium quidem
+        aspernatur fugit harum.
+        Enim quia libero repellendus adipisci aliquam similique officiis a labore consequuntur, dignissimos dolorum
+        porro iusto possimus blanditiis qui corporis odio earum provident illum magni accusamus quas, molestiae in?
+        Impedit, officiis?
+        Minima similique saepe officia at aliquam rem nisi enim autem quae unde in consequuntur maxime ducimus,
+        repudiandae, voluptatem voluptas aut esse commodi eaque quam pariatur libero? Ad voluptate reiciendis illo.
+        Delectus quia ducimus perspiciatis, quasi veritatis fugiat nesciunt quae. Quibusdam qui praesentium minima?
+        Porro nisi, nihil, voluptas vel aperiam, nobis tenetur optio in ut voluptatum labore corporis omnis voluptate
+        cupiditate.
+        Cupiditate blanditiis est et suscipit quo excepturi nesciunt quidem accusantium voluptatem repellendus, non
+        dicta maiores aliquid, voluptate nisi, expedita dignissimos illum itaque corporis nam rerum. Quo illo non
+        repudiandae expedita.
+        Ut in at doloremque, maxime voluptas ipsa aliquam esse voluptates aperiam voluptatem? Obcaecati laudantium
+        adipisci repudiandae earum magni? Architecto facilis doloremque sequi provident saepe ipsam alias debitis,
+        cupiditate enim voluptates.
+        Temporibus mollitia, molestias commodi quas aliquam optio amet maiores dicta ea minima quisquam aliquid eveniet
+        odio, ullam, quasi maxime nemo hic. Obcaecati quae laboriosam tempore at aut ex eum voluptatem!
+        Molestias eligendi ex blanditiis quae tenetur nemo dolorem, voluptate sed nihil fuga enim repellat veniam quam
+        id beatae fugit, harum in et quidem rerum nesciunt excepturi. Vero sequi expedita tempora.
+        Rem expedita id itaque distinctio adipisci animi veniam commodi tenetur dicta impedit ducimus iusto aperiam
+        totam, cum obcaecati dolorem placeat sit repellat voluptate sint corrupti quo aliquid, qui quisquam! Veniam.
+        Molestiae eum voluptatum possimus exercitationem impedit repellat quasi eos eius praesentium dignissimos saepe
+        maxime, commodi corporis animi eaque. Eos delectus hic praesentium. Magnam harum veniam ab optio in dolore
+        nobis?
+        Quasi odit tempora ipsum doloribus, fugiat recusandae! Hic non ratione facilis tempora? Eligendi, maxime nobis,
+        cum veniam sapiente excepturi, ullam corporis quisquam esse sit veritatis voluptatem labore! Numquam, laborum
+        maxime.
+        Dignissimos doloribus, mollitia possimus quo cupiditate consectetur earum non eius consequatur autem cumque
+        deleniti perspiciatis. Asperiores ducimus error atque sapiente autem? Neque, sit? Voluptatibus voluptate
+        voluptates quae iusto rem fugiat!
+        Nulla minima omnis sequi, commodi voluptatibus exercitationem optio modi soluta ad. Eos quod maiores vero natus
+        recusandae fugiat, consequatur necessitatibus voluptas, cum qui commodi! Ab voluptatum sint excepturi cupiditate
+        unde!
+        Facere, velit enim. Architecto praesentium, aperiam vitae ut et quo eveniet rem excepturi omnis possimus sequi,
+        sint laboriosam ad nemo saepe reprehenderit dolor blanditiis. Error ad voluptatem maiores itaque id.
+        Debitis explicabo voluptate perspiciatis asperiores fugiat tenetur consequatur, qui ducimus, deserunt aliquam
+        officiis praesentium minima nulla, ipsa dolorum! Assumenda esse ipsam pariatur! Dignissimos sunt est natus quis
+        molestias debitis laboriosam!
+        Rerum in ex hic quisquam laudantium voluptatibus magni, accusamus aut nesciunt ullam repellendus iure, sint
+        error? Ea maiores impedit, nulla similique natus cumque deleniti, totam, hic qui numquam dolorem soluta?
+        Dignissimos iusto, dolor unde voluptates repudiandae ipsam illum soluta perferendis maiores ex cumque quibusdam
+        ducimus voluptatem, porro non autem quisquam rem deserunt, consequuntur ipsa illo distinctio? Provident sunt
+        natus dolor!
+        Nulla, quae delectus minus dolorum maxime omnis veniam unde, praesentium id asperiores quaerat. Amet autem
+        voluptatem consequuntur fugiat maxime quisquam impedit quaerat rem eum odit veniam eius perspiciatis, eos
+        magnam?
+        Earum cumque suscipit odio iure, aut ad. Ratione quis accusamus vero provident natus aperiam quam voluptas ullam
+        sequi ex. Placeat itaque quo fugit non qui, dolore mollitia illum obcaecati. Maxime!
+        Omnis sunt voluptatem quam in, porro, dolor iure asperiores cumque repudiandae similique totam rerum numquam et
+        nesciunt doloremque deleniti tempora assumenda. Exercitationem quod commodi quasi nulla provident debitis ad
+        odio!
+        Quaerat repellat sit aspernatur, maiores magnam quod placeat laudantium sapiente architecto ad, vitae dicta quos
+        amet. Dolore repudiandae quidem iusto ratione, et distinctio saepe incidunt tempore voluptatem excepturi, beatae
+        nobis.
+        Perspiciatis nisi numquam reiciendis sequi corporis soluta cumque illo quos, qui vero optio doloremque sint,
+        nobis exercitationem? Ratione, repellendus fuga, repellat magni suscipit impedit quaerat aspernatur nostrum
+        beatae earum vero.
+        Harum, consequuntur at quos quisquam recusandae incidunt quibusdam quod eos ipsum nemo aperiam architecto
+        dignissimos ad similique distinctio reiciendis repudiandae rerum et cum perferendis voluptates perspiciatis
+        asperiores tempora? Eligendi, et?
+        Vitae id rerum provident nesciunt dolorem. Rem in corrupti repellat, vel soluta repudiandae illum assumenda,
+        exercitationem, modi cumque error dolor id. Veritatis, temporibus quia quo veniam sunt qui a ullam!
+        Sed accusantium magnam soluta illum quasi aspernatur est, saepe porro enim eius voluptatibus aperiam modi?
+        Doloribus architecto minus cupiditate temporibus quaerat dicta dolorum, deleniti tenetur nobis vitae eligendi,
+        inventore praesentium!
+        Animi repellat consectetur necessitatibus, quidem dignissimos exercitationem architecto sapiente alias laborum
+        itaque obcaecati aliquam est amet quae modi, nisi excepturi ipsum inventore impedit. Sed neque cumque atque
+        iusto voluptates vitae.
+        Voluptatum recusandae ducimus ipsum distinctio magni quisquam laborum porro, maxime fuga modi a necessitatibus
+        adipisci voluptate esse aliquam ratione harum blanditiis, quia exercitationem, aliquid rerum. Magni et aperiam
+        laborum praesentium!
+        Alias consequatur veniam, iste ea quos numquam reprehenderit sunt ipsum incidunt rem enim illo commodi
+        laboriosam accusamus est autem asperiores dignissimos quam necessitatibus exercitationem, quo sapiente illum!
+        Velit, a quasi.
+        Nostrum architecto maxime magni, ipsum repudiandae ipsam aspernatur quod veniam vero corrupti in magnam pariatur
+        fugit modi culpa ad dolorem sint. Vel ipsa eligendi obcaecati unde fugit expedita ut nemo.
+        Quo iusto perspiciatis provident veritatis. Rem, magni commodi. Iusto, officia quas accusamus inventore
+        consequatur autem temporibus at expedita rem. Debitis veniam autem a numquam recusandae ipsum ex consequatur
+        magni adipisci!
+        Culpa amet laudantium sed consectetur tenetur. Doloremque iure minima eaque, ipsum voluptatem voluptatum, ea
+        cupiditate sed atque blanditiis repellat veniam commodi. Laboriosam possimus aspernatur, asperiores molestiae
+        numquam veritatis molestias officiis?
+        Dolorum doloremque quidem nemo, reprehenderit nam deserunt. Saepe, placeat debitis animi vero odit modi amet,
+        provident ipsa reiciendis assumenda dolore eveniet quis at quo dicta adipisci. Veniam rerum vero ducimus.
+        Soluta iusto reiciendis blanditiis eos quisquam molestiae rem, suscipit sapiente assumenda nesciunt repellat
+        laboriosam aut placeat repellendus cum quae fugiat officia est aliquam iste magnam deleniti perferendis
+        doloribus. Accusantium, doloremque?
+        Nam quos fugiat ducimus labore in! Recusandae ipsam eaque numquam, non fugiat, obcaecati autem accusantium
+        cumque eveniet odit sequi earum illo repellat vero distinctio facilis asperiores, eligendi modi repellendus
+        natus!
+        Eius labore tempore ratione numquam. Possimus exercitationem provident molestiae eum laboriosam, ea eius et
+        voluptatibus at voluptatum itaque sapiente ipsam impedit nobis minima incidunt ratione aperiam similique sed
+        voluptate quod!
+        Tempora sequi dolore, deserunt voluptatibus, nemo cum repellat cupiditate optio magni harum amet ut quam
+        inventore hic eaque in odio nihil similique cumque dolorem aspernatur! Consequatur debitis explicabo facilis!
+        Laboriosam?
+        Necessitatibus eum iure, cumque adipisci eveniet, porro omnis fuga dolore sunt dignissimos velit cum.
+        Repudiandae harum mollitia quas, minus repellat vitae dolore. Deleniti, id illum! Illum assumenda molestias in
+        dignissimos.
+        Enim, necessitatibus? Illo, consequatur ea optio iste cupiditate dolore obcaecati, laudantium, eius ab suscipit
+        voluptatibus aspernatur! Tempore saepe aspernatur incidunt, quisquam odio distinctio et veniam molestiae libero
+        mollitia doloremque beatae?
+        Iusto commodi labore dolor aut totam ad fugiat temporibus praesentium eum nobis, placeat sint blanditiis ex
+        molestias unde ab excepturi vero cumque culpa corrupti, nihil eligendi maiores? Quisquam, vitae libero.
+        Nostrum sapiente quibusdam repellendus eius molestiae facere dolorum dolorem, quisquam incidunt, placeat optio?
+        Quos assumenda similique eos autem blanditiis veritatis sunt, recusandae eum voluptatibus soluta ullam nulla?
+        Vitae, enim eum.
+        Quidem consequatur, deserunt molestiae sunt quaerat ratione quia temporibus voluptatibus unde dicta tempora
+        dolorum similique autem voluptate iure eius quod laborum exercitationem soluta labore. Quisquam obcaecati
+        adipisci omnis architecto cupiditate!
+        Esse incidunt tenetur at impedit hic alias expedita minus possimus eum eius. Modi nisi aliquid dolorem, a
+        officia quam ducimus suscipit qui, fugiat in alias sequi illo sed dolorum? Nam.
+        Veritatis quis nisi optio deleniti inventore nobis alias! Dolor, ut voluptatum inventore, soluta ab corrupti,
+        vitae beatae quisquam nisi accusantium reiciendis repellat eaque quo deleniti totam sunt eos facere blanditiis?
+        Consequuntur consequatur inventore maiores eius vitae, fugiat possimus. Mollitia optio, eligendi sit assumenda
+        cumque fuga debitis quas id quasi omnis consequatur, distinctio consectetur ad similique quia, quaerat velit
+        ipsam asperiores.
+        Veniam, nostrum ad. Animi numquam aliquam dicta nemo? Voluptatibus libero nisi fuga neque, sint nihil quas saepe
+        accusamus asperiores dolor quis rerum totam molestias minima minus. Ex voluptas deleniti corporis.
+        Quia facere eligendi eius assumenda itaque, repellat, corrupti similique ipsa commodi consequuntur ullam maxime
+        doloribus pariatur fugit veritatis vero blanditiis quis, molestias modi dolore deserunt illo? Exercitationem
+        illum nemo architecto?
+        Unde error labore minus at eos debitis omnis voluptatem nostrum distinctio obcaecati. Illo est neque deleniti
+        incidunt voluptatum. Tempore in explicabo sunt doloribus distinctio aut molestias dolor itaque rerum officia.
+        Voluptatem blanditiis rem veniam aliquid ut, enim quibusdam, corporis eaque vero hic beatae facilis? Nihil,
+        cupiditate. Quidem iste quas, incidunt odit modi quaerat eos tempora, aut voluptate repellendus, vero
+        temporibus.
+        Aspernatur maiores, porro earum eaque mollitia saepe? Aut fugit sed, consectetur tenetur laborum sint minima.
+        Ipsa voluptates, dolorem, libero fuga in perferendis ad eaque sunt praesentium recusandae optio sit vitae.
+        Beatae harum, voluptatibus nihil cupiditate quas eaque ullam provident enim ex ipsum magnam quasi vero hic cum
+        quam, assumenda in voluptatum nemo quis minima? Voluptas, quam? Quam nemo quasi esse.
+        Aliquam repellat at quia autem? Recusandae voluptate adipisci mollitia fugit fuga, eveniet laudantium nulla.
+        Quasi tempore possimus molestiae laudantium architecto non? Animi quasi aut, voluptatibus corrupti quam et!
+        Maiores, facilis.
+        Ullam quam culpa numquam non aperiam expedita corrupti laudantium alias fugit rem nisi ratione veniam unde autem
+        libero magnam ab, tenetur exercitationem facilis commodi. Similique saepe doloribus inventore consequuntur
+        accusantium.
+        Dolores aspernatur corrupti ullam non voluptatum animi debitis id deserunt modi, ipsum eligendi ducimus.
+        Delectus, odio! Est fuga rerum velit. Praesentium ea consequuntur repellat laudantium corporis odit numquam eius
+        asperiores.
+        Quae magni quo doloribus et. Totam voluptatem voluptates accusamus beatae veniam provident doloremque vero
+        perspiciatis, architecto alias! Cumque nulla dolores officiis. Debitis corrupti sequi delectus, dolorum libero
+        odio cum ipsum!
+        Facere consequuntur non perferendis, a modi rerum perspiciatis voluptate voluptatibus enim commodi, quod
+        distinctio pariatur minus saepe necessitatibus sapiente odio fugiat nulla debitis aliquam. Vel nemo dolore hic a
+        consequatur?
+        Animi, consequuntur sunt. Quam architecto dicta id sed at corporis aspernatur minima vel, libero autem hic
+        exercitationem ut eius cumque consequuntur quidem voluptatem nihil magnam. Qui illo debitis sequi iste?
+        Natus quod maxime autem provident nesciunt possimus eaque itaque. Accusantium asperiores quia modi odit
+        aspernatur fuga sunt ipsam omnis, dolor, alias ut delectus dolorem voluptates enim. Non ut placeat nesciunt?
+        Voluptate praesentium dolores molestias harum rerum aliquid provident atque quasi, omnis temporibus sequi
+        excepturi recusandae voluptatibus dolor voluptatum natus neque corporis beatae voluptatem illo quis vel deleniti
+        quidem. Quaerat, necessitatibus.
+        Porro incidunt quidem corrupti ad odio quod delectus accusamus, fugiat voluptate inventore harum voluptates
+        laboriosam deserunt et cumque debitis recusandae. Nemo voluptates inventore at delectus distinctio, optio
+        exercitationem nesciunt harum?
+        Quisquam et nulla eum! Saepe, molestiae dignissimos a possimus modi sapiente deserunt eum quia maxime eaque
+        nesciunt autem ea. Itaque, quibusdam dolores perspiciatis cumque dolorem totam pariatur quia magnam ut.
+        Placeat iusto, a ipsam quis quaerat ad voluptatum, in iste maxime sapiente adipisci veniam numquam quidem nisi
+        voluptatem totam, odio minima libero enim quasi deleniti ratione deserunt. Ipsam, adipisci impedit?
+        Aut enim obcaecati recusandae saepe asperiores, voluptate veritatis minima quo dicta inventore, in eligendi
+        iste. Tempore maxime odio esse assumenda enim dolorum accusamus maiores unde aperiam, placeat quaerat
+        consectetur praesentium!
+        Sed, inventore nostrum a facere atque dicta aut voluptas impedit culpa reprehenderit facilis soluta fuga
+        accusamus maxime qui molestiae nisi rem commodi, tenetur quod nam, neque voluptatibus. Inventore, officia iste.
+        Dolor eum eius hic vero dolorum. Aspernatur maxime assumenda reprehenderit porro dolores distinctio minima
+        incidunt inventore a impedit nesciunt, nulla officiis ducimus ipsa iste dolore unde nam doloremque aliquid
+        explicabo?
+        Incidunt, mollitia explicabo distinctio saepe optio illo assumenda dicta modi, dolores fugiat sequi quos, nihil
+        deleniti dolorem sapiente totam labore! Voluptatibus sint suscipit natus dignissimos autem dolorum similique,
+        voluptate amet!
+        Eaque soluta, recusandae illum debitis enim aperiam expedita eveniet accusantium non voluptatem sapiente
+        voluptate, suscipit saepe quo fugit in. Assumenda, voluptate nihil aperiam modi officia odit nam eveniet ratione
+        dolorem?
+        Numquam dolorum quas, repudiandae ullam ut cupiditate sunt, facilis tempora corrupti, ducimus fuga doloribus
+        deserunt excepturi. Culpa tempora quas aperiam porro ducimus alias sequi, quos ipsum? Cumque sunt quod officia!
+        A reprehenderit magni ipsa sed facilis incidunt repellendus nemo, similique repudiandae, veritatis voluptas
+        quasi sunt optio, unde sint eum hic magnam doloribus alias consequuntur! Modi dolor nam aspernatur repellendus
+        praesentium.</p>
+</body>
+
+</html> -->

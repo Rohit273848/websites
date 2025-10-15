@@ -1,3 +1,6 @@
+html,body{
+    overflow-x: hidden;
+}
 .font-display{
     font-family: poppins, sans-serif;
 }
@@ -7,6 +10,9 @@
 .text-primary {
     color: #3238f2;
 }
+.bg-primary{
+    background-color: #3238f2 ;
+}
 body{
     font-family: inter,sans-serif;
 }
@@ -14,5 +20,32 @@ h1,h2,h2{
     
     font-family: poppins, sans-serif;
     color: #1e2939;
-    font-weight: 500;
+    font-weight: bold;
+} 
+.anchor-hover{
+    border-bottom: 2px dotted rgb(185, 185, 185);
+}
+.anchor-hover:hover{
+    border-bottom: 1px solid gray;
+}
+
+.gradient-hover-outer{
+    border:1px solid black;
+}
+.gradient-hover-outer{
+    border:1px solid black;
+}
+
+.container{
+    padding:48px 24px ;
+    max-width:1280px;
+    margin-top: calc(var(--spacing) * 16);
+    margin-inline: auto;
+    @media (width >= 64rem /* 1024px */) {
+        padding-inline: calc(var(--spacing) * 8) /* 2rem = 32px */;
+    }
+    @media (width >= 64rem /* 1024px */) {
+        margin-top: calc(var(--spacing) * 32) /* 8rem = 128px */;
+    }
+  /* @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mT-32; */
 }
